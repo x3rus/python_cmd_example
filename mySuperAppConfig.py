@@ -35,6 +35,7 @@ class mySuperAppConfig:
         self.config_parser.read(self.config_filename)
 
         # Of course more CODE regarding the data validation process execption throw ... 
+        local_settings = Settings(base_url=self.config_parser['camunda']['base_url'])
 
-        return Settings(base_url=self.config_parser['camunda']['base_url'])
+        return local_settings
 

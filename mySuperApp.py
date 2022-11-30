@@ -13,4 +13,5 @@ class mySuperApp:
     def run_or_app_action(self):
         """ start of the app the "real" start with settings """
         print("my_super_app.run_or_app_action , let's the show begging")
+        print("I communicating with " + self.setting.base_url)
         pass
